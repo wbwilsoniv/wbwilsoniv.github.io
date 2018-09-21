@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    grid-template-areas: 'header header' 'about aside1';
+    grid-template-columns: '3fr 1fr';
+}
+
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: header;
+    background-color: rgb(82,94,180);
+}
+
+.heading a {
+    margin: auto;
+    text-decoration: none;
+}
+
+.about {
+    grid-area: about;
+}
+
+.aside1 {
+    background-color: rgb(82,94,180);
+    grid-area: aside1;
+}
+
+#headshot {
+    max-width: 300px;
+    min-width: 150;
+}
