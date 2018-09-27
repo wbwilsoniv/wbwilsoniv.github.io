@@ -1,26 +1,26 @@
 body {
     display: grid;
-    grid-template-areas: 'header header' 'about aside1';
+    grid-template-areas: 'header header' 'about aside1' 'projects projects' 'experience experience' 'contact contact';
     grid-template-columns: '3fr 1fr';
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
     background-color: antiquewhite;
-    color: color: rgb(35,35,35);
+    color: rgb(35,35,35);
 }
 
 .heading {
     display: flex;
     justify-content: space-evenly;
     grid-area: header;
-    padding: 20px;
+    /* padding: 20px; */
     color: rgb(35,35,35);
-    background-color: rgb(82,94,180);
+    /* background-color: rgb(82,94,180); */
+    box-shadow: 0px 2px rgba(35,35,35,0.05);
 }
 
 .heading a {
     margin: auto;
     text-decoration: none;
-    padding-top: 80px;
-
+    padding: 80px 0 40px 0;
 }
 
 .heading a:hover {
@@ -35,7 +35,7 @@ body {
 
 .about {
     grid-area: about;
-    padding: 30px;
+    padding: 30px 30px 30px 60px;
     line-height: 145%;
     max-width: 60vw;
 }
@@ -43,18 +43,18 @@ body {
 .aside1 {
     /* background-color: rgb(82,94,180); */
     grid-area: aside1;
-    box-shadow: 2px 2px rgba(35,35,35,0.1);
+    box-shadow: 0px 2px rgba(35,35,35,0.05);
     margin: auto;
 }
 
 .aside1 h1 { 
     margin: auto;
-    padding-left: 15px;
+    padding: 25px;
 }
 
 .aside1 h2 {
     margin: auto;
-    padding-left: 15px;
+    padding: 10px 15px 30px 15px;
 }
 
 #headshot {
@@ -63,3 +63,46 @@ body {
     padding: 20px;
     border-radius: 50%;
 }
+
+.projects {
+    grid-area: projects;
+    padding: 30px 30px 30px 60px;
+}
+
+.proj {
+    display: grid;
+    padding: 25px;
+    grid-template-areas: 'appTitle . .' 'appSS appSS .' 'appDesc appDesc appDesc' 'appLink . .';
+    box-shadow: 0px 2px rgba(35,35,35,0.05);
+}
+
+.appTitle {
+    grid-area: appTitle;
+}
+
+.appSS {
+    grid-area: appSS;
+    padding: 30px;
+    max-width: 50vw;
+}
+
+.appDesc {
+    grid-area: appDesc;
+    padding: 50px;
+    max-width: 60vw;
+}
+
+.appLink {
+    grid-area: appLink;
+}
+
+.experience {
+    grid-area: experience;
+    padding: 25px;
+}
+
+.contact {
+    grid-area: contact;
+    padding: 25px;
+}
+
