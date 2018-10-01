@@ -135,6 +135,7 @@ body {
 .jDesc {
     max-width: 60vw;
     padding: 0px 10px 10px 10px;
+    line-height: 145%;
 }
 
 .contact {
