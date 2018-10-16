@@ -132,16 +132,12 @@ body {
 .proj {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 'appTitle . .' 'appSS appSS .' 'appDesc appDesc appDesc' 'appLink . .';
+    grid-template-areas: 'appLink . .' 'appSS appSS .' 'appDesc appDesc appDesc';
     box-shadow: 0px 2px rgba(35,35,35,0.05);
 }
 
 .projects h2 {
     color: #ce9e62;
-}
-
-.appTitle {
-    grid-area: appTitle;
 }
 
 .appSS {
@@ -152,13 +148,12 @@ body {
 
 .appDesc {
     grid-area: appDesc;
-    padding: 10px 0px 5px 0px;
+    padding: 10px 0px 5px 10px;
 }
 
 .appLink {
     grid-area: appLink;
     text-decoration: none;
-    padding-bottom: 15px;
 }
 
 .appLink:visited {
@@ -168,6 +163,7 @@ body {
 
 .appLink:hover {
     font-weight: 800;
+    font-size: 110%;
     color: rgb(35,35,35);
 }
 
