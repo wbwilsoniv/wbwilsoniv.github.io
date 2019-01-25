@@ -17,7 +17,7 @@ body {
 }
 .main {
   display: grid;
-  grid-template-columns: auto 400px 200px auto;
+  grid-template-columns: auto 500px 300px auto;
   grid-template-rows: auto auto auto auto auto 50px;
   grid-template-areas:
     "heading heading heading heading"
@@ -291,56 +291,215 @@ section {
 .expGridDiv {
   display: grid;
   grid-template-columns: 3fr 1fr 3fr 1fr 1fr 1fr;
+  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px;
   grid-template-areas:
-    "div open desc brack mon yr"
-    "div open desc brack mon yr"
-    "div open desc brack mon yr"
-    "div open desc brack mon yr"
-    "div open desc brack mon yr"
-    "div open desc brack mon yr"
-    "div open desc brack mon yr"
-    "div open desc brack mon yr";
+    "jCont1 open desc brackCont mon yr"
+    "jCont2 open desc brackCont mon yr"
+    "jCont3 open desc brackCont mon yr"
+    "jCont4 open desc brackCont mon yr"
+    "jCont5 open desc brackCont mon yr"
+    "jCont6 open desc brackCont mon yr"
+    "jCont7 open desc brackCont mon yr"
+    "jCont8 open desc brackCont mon yr";
   margin: 0 auto;
+  /* position: relative; */
 }
 .jCont {
-  grid-area: div;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: baseline;
+  display: grid;
+  grid-template-areas: "employer" "jtitle";
+  justify-items: center;
+  align-items: end;
+  grid-row-gap: 0px;
+  margin: 0;
   position: relative;
-  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
 }
 .employer {
-  align-self: center;
-  font-size: 1.25rem;
-  flex-grow: 0;
-  border-bottom: 2px solid #ce9e62;
+  grid-area: employer;
+  position: absolute;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  /* border-bottom: 2px solid #ce9e62; */
 }
 .jtitle {
-  align-self: flex-start;
-  font-size: 1.05rem;
+  grid-area: jtitle;
+  position: absolute;
+  margin-top: 1px;
+  font-size: 1rem;
   font-weight: bold;
-  flex-grow: 0;
   /* border-top: 2px solid #ce9e62; */
 }
 .open {
+  justify-self: center;
+  padding-top: 0px;
   font-size: 5rem;
+  font-family: "Megrim", cursive;
 }
 .desc {
-  font-size: 0.85rem;
+  justify-self: center;
+  align-self: center;
+  font-size: 0.75rem;
+  font-family: "Raleway", sans-serif;
+}
+.brackCont {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .brack {
-  font-size: 5rem;
+  width: 10px;
+  height: 50px;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-left: 4px solid black;
 }
 .mon {
   font-size: 1.15rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .yr {
-  justify-self: center;
-  font-size: 3rem;
-  border-left: 2px solid black;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   border-bottom: 2px solid black;
+}
+.yr h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.freeLColor {
+  color: #ce9e62;
+}
+#freeL {
+  grid-area: jCont1;
+  color: rgb(250, 250, 250);
+}
+#freeL h4 {
+  align-self: end;
+  border-bottom: 2px solid #ce9e62;
+}
+#freeL h5 {
+  align-self: start;
+}
+.brack.freeL {
+  border-top: 0px;
+  border-bottom: 4px solid #ce9e62;
+  border-left: 4px solid #ce9e62;
+}
+.mon.freeL p {
+  position: absolute;
+  bottom: 20px;
+  /* border-bottom: 2px solid black; */
+}
+/* .yr.freeL {
+  color: rgb(250, 250, 250);
+  border-bottom: 2px solid black;
+} */
+#gaPS {
+  grid-area: jCont2;
+  color: rgb(250, 250, 250);
+  align-items: start;
+  position: relative;
+}
+#gaPS h4 {
+  color: rgb(250, 250, 250);
+  border-bottom: 4px solid rgba(109, 108, 108, 1);
+}
+#gaPS h5 {
+  top: -11px;
+}
+.open.gaPSColor {
+  color: rgba(109, 108, 108, 1);
+  top: 0;
+}
+.yr.gaPS {
+  color: rgb(250, 250, 250);
+}
+.brack.gaPS {
+  border-top: 4px solid rgba(109, 108, 108, 1);
+  border-bottom: 4px solid rgba(109, 108, 108, 1);
+  border-left: 4px solid rgba(109, 108, 108, 1);
+  position: absolute;
+  height: 60px;
+  top: 17px;
+}
+.mon.gaPS {
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.mon.gaPS p {
+}
+#mm {
+  grid-area: jCont3;
+}
+#mm h4 {
+  align-self: end;
+  border-bottom: 4px solid rgb(74, 134, 232);
+}
+#mm h5 {
+  align-self: start;
+}
+.open.mmColor {
+  color: rgb(74, 134, 232);
+  top: 0;
+}
+.brack.mm {
+  position: absolute;
+  height: 88px;
+  top: 0;
+  margin-top: -15px;
+  border-top-color: rgb(74, 134, 232);
+  border-left-color: rgb(74, 134, 232);
+  border-bottom-color: rgb(74, 134, 232);
+}
+.mon.mm {
+  justify-content: space-around;
+}
+.mmFeb {
+  position: absolute;
+  top: 0;
+  margin-top: -25px;
+}
+.mmJan {
+  position: absolute;
+  bottom: 0;
+}
+#ghESM {
+  grid-area: jCont4;
+}
+#ghESM h4 {
+  align-self: center;
+}
+#ghESM h5 {
+  align-self: start;
+  border-top: 4px solid rgb(170, 8, 8);
+}
+.open.ghColor {
+  color: rgb(170, 8, 8);
+  top: 0;
+}
+.brack.ghESM {
+  position: absolute;
+  height: 150px;
+  top: 0;
+  margin-top: -25px;
+  border-top-color: rgb(170, 8, 8);
+  border-left-color: rgb(170, 8, 8);
+  border-bottom-color: rgb(170, 8, 8);
+}
+.ghESMNov {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -25px;
 }
 /* .expGridDiv div h5:before {
   content: "";
@@ -354,9 +513,9 @@ section {
   width: 100%;
   object-fit: contain;
 }
-.experience h2 {
+/* .experience h2 {
   color: #ce9e62;
-}
+} */
 
 .jTitle {
   padding-top: 10px;
