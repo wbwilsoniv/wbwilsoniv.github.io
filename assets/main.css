@@ -121,7 +121,6 @@ section {
     35%,
     rgba(5, 5, 5, 0.9)
   );
-  /* opacity: 0.6; */
   position: absolute;
   background-attachment: fixed;
   overflow: hidden;
@@ -286,12 +285,12 @@ section {
   grid-area: experience;
   /* padding: 30px 30px 30px 60px; */
   line-height: 145%;
-  padding-left: 0.5rem;
+  padding: 0 0.7rem 0 0.7rem;
 }
 .expGridDiv {
   display: grid;
-  grid-template-columns: 3fr 1fr 3fr 1fr 1fr 1fr;
-  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px;
+  grid-template-columns: 280px 1fr 3fr 1fr 1fr 1fr;
+  grid-template-rows: 65px 100px 100px 100px 100px 100px 100px 65px;
   grid-template-areas:
     "jCont1 open desc brackCont mon yr"
     "jCont2 open desc brackCont mon yr"
@@ -302,6 +301,12 @@ section {
     "jCont7 open desc brackCont mon yr"
     "jCont8 open desc brackCont mon yr";
   margin: 0 auto;
+  background: linear-gradient(
+    to bottom,
+    rgba(155, 155, 155, 0.6),
+    35%,
+    rgba(50, 50, 50, 0.9)
+  );
   /* position: relative; */
 }
 .jCont {
@@ -329,6 +334,12 @@ section {
   font-size: 1rem;
   font-weight: bold;
   /* border-top: 2px solid #ce9e62; */
+}
+.openCont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .open {
   justify-self: center;
@@ -385,25 +396,23 @@ section {
 }
 #freeL h4 {
   align-self: end;
-  border-bottom: 2px solid #ce9e62;
+  border-bottom: 4px solid #ce9e62;
 }
 #freeL h5 {
   align-self: start;
 }
 .brack.freeL {
+  position: absolute;
+  bottom: 7px;
   border-top: 0px;
   border-bottom: 4px solid #ce9e62;
   border-left: 4px solid #ce9e62;
 }
-.mon.freeL p {
+.flJan {
   position: absolute;
-  bottom: 20px;
-  /* border-bottom: 2px solid black; */
+  bottom: -18px;
 }
-/* .yr.freeL {
-  color: rgb(250, 250, 250);
-  border-bottom: 2px solid black;
-} */
+
 #gaPS {
   grid-area: jCont2;
   color: rgb(250, 250, 250);
@@ -412,31 +421,37 @@ section {
 }
 #gaPS h4 {
   color: rgb(250, 250, 250);
-  border-bottom: 4px solid rgba(109, 108, 108, 1);
 }
 #gaPS h5 {
-  top: -11px;
+  top: -3px;
+  border-top: 4px solid rgb(251, 41, 59);
 }
 .open.gaPSColor {
-  color: rgba(109, 108, 108, 1);
+  color: rgb(251, 41, 59);
   top: 0;
 }
 .yr.gaPS {
   color: rgb(250, 250, 250);
 }
 .brack.gaPS {
-  border-top: 4px solid rgba(109, 108, 108, 1);
-  border-bottom: 4px solid rgba(109, 108, 108, 1);
-  border-left: 4px solid rgba(109, 108, 108, 1);
+  border-top: 4px solid rgb(251, 41, 59);
+  border-bottom: 4px solid rgb(251, 41, 59);
+  border-left: 4px solid rgb(251, 41, 59);
   position: absolute;
-  height: 60px;
+  height: 40px;
   top: 17px;
 }
 .mon.gaPS {
-  justify-content: center;
+  justify-content: flex-start;
   padding-bottom: 15px;
 }
-.mon.gaPS p {
+.psSep {
+  position: absolute;
+  top: -12px;
+}
+.psMay {
+  position: absolute;
+  bottom: 6px;
 }
 #mm {
   grid-area: jCont3;
@@ -454,7 +469,7 @@ section {
 }
 .brack.mm {
   position: absolute;
-  height: 88px;
+  height: 90px;
   top: 0;
   margin-top: -15px;
   border-top-color: rgb(74, 134, 232);
@@ -471,35 +486,138 @@ section {
 }
 .mmJan {
   position: absolute;
-  bottom: 0;
+  bottom: -18px;
 }
 #ghESM {
   grid-area: jCont4;
 }
 #ghESM h4 {
-  align-self: center;
+  align-self: end;
 }
 #ghESM h5 {
   align-self: start;
-  border-top: 4px solid rgb(170, 8, 8);
+  border-top: 4px solid rgb(186, 33, 64);
 }
 .open.ghColor {
-  color: rgb(170, 8, 8);
+  color: rgb(186, 33, 64);
   top: 0;
 }
 .brack.ghESM {
   position: absolute;
-  height: 150px;
+  height: 114px;
   top: 0;
-  margin-top: -25px;
-  border-top-color: rgb(170, 8, 8);
-  border-left-color: rgb(170, 8, 8);
-  border-bottom-color: rgb(170, 8, 8);
+  margin-top: -10px;
+  border-top-color: rgb(186, 33, 64);
+  border-left-color: rgb(186, 33, 64);
+  border-bottom-color: rgb(186, 33, 64);
 }
 .ghESMNov {
   position: absolute;
   bottom: 0;
   margin-bottom: -25px;
+}
+#ghEC {
+  grid-area: jCont5;
+}
+#ghEC h4 {
+  align-self: end;
+}
+#ghEC h5 {
+  align-self: start;
+  border-top: 4px solid rgb(186, 33, 64);
+}
+.brack.ghEC {
+  position: absolute;
+  height: 84px;
+  top: 0;
+  margin-top: 29px;
+  border-top-color: rgb(186, 33, 64);
+  border-left-color: rgb(186, 33, 64);
+  border-bottom-color: rgb(186, 33, 64);
+}
+
+#ghHK {
+  grid-area: jCont6;
+}
+#ghHK h4 {
+  align-self: end;
+  border-bottom: 4px solid rgb(186, 33, 64);
+}
+#ghHK h5 {
+  align-self: start;
+}
+.brack.ghHK {
+  position: absolute;
+  height: 80px;
+  top: 0;
+  margin-top: 37px;
+  border-top-color: rgb(186, 33, 64);
+  border-left-color: rgb(186, 33, 64);
+  border-bottom-color: rgb(186, 33, 64);
+}
+.hkAug {
+  position: absolute;
+  top: -10px;
+}
+.hkJul {
+  position: absolute;
+  bottom: 25px;
+}
+
+#belle {
+  grid-area: jCont7;
+}
+#belle h4 {
+  align-self: end;
+}
+#belle h5 {
+  align-self: start;
+  border-top: 4px solid rgb(100, 95, 150);
+}
+.bellJan {
+  position: absolute;
+  bottom: -18px;
+}
+.open.belleColor {
+  color: rgb(100, 95, 150);
+}
+.brack.belle {
+  position: absolute;
+  height: 45px;
+  top: 0;
+  margin-top: 37px;
+  border-top-color: rgb(100, 95, 150);
+  border-left-color: rgb(100, 95, 150);
+  border-bottom-color: rgb(100, 95, 150);
+}
+.open.wsuColor {
+  color: rgb(150, 30, 51);
+}
+#wsu h4 {
+  align-self: end;
+  border-bottom: 4px solid rgb(150, 30, 51);
+}
+#wsu h5 {
+  align-self: start;
+}
+
+.brack.wsu {
+  position: absolute;
+  height: 45px;
+  top: 10px;
+  border-top: 4px solid rgb(150, 30, 51);
+  border-left: 4px solid rgb(150, 30, 51);
+  border-bottom: 0px;
+}
+.mon.wsu {
+  border-bottom: 0px;
+}
+.wsuDec {
+  position: absolute;
+  top: -8px;
+}
+#wsuYr {
+  border-bottom: 0px;
 }
 /* .expGridDiv div h5:before {
   content: "";
