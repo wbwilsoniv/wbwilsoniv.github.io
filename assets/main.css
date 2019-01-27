@@ -144,7 +144,7 @@ section {
   padding: 5px;
   display: grid;
   margin: 0;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10, 10, 10, 0.9);
   grid-template-areas: "h1 topR" "h1 botR";
   border: 1px black solid;
   border-radius: 2px;
@@ -154,7 +154,7 @@ section {
   justify-self: center;
   align-self: center;
   grid-area: h1;
-  font-size: 8em;
+  font-size: 10em;
   color: white;
   margin: 0;
   padding: 0px 15px 0 15px;
@@ -168,8 +168,8 @@ section {
   /* flex-direction: column;
   align-content: center;
   justify-content: flex-end; */
-  background-color: rgba(10, 10, 10, 0.8);
-  font-size: 2.5rem;
+  /* background-color: rgba(10, 10, 10, 0.8); */
+  font-size: 3rem;
   /* max-height: 150px; */
   color: white;
   margin: 0;
@@ -261,7 +261,7 @@ section {
 }
 .projRow img {
   height: 75px;
-  width: 75px;
+  width: auto;
   padding-right: 2rem;
 }
 
