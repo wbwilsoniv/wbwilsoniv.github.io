@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css?family=Megrim|Montserrat|Raleway"
       rel="stylesheet"
     />
-    <script src="main.js"></script>
+    <script src="scripts.js" defer></script>
   </head>
   <body>
     <div class="bgOverlay"></div>
@@ -34,12 +34,12 @@
             alt="Will Wilson logo"
             id="wwLogo"
           /> -->
-          <h2>- Web Developer -</h2>
-          <p>Solving problems by building solutions</p>
+          <h2 class="introSub">- Web Developer -</h2>
+          <p class="introDesc">Solving problems by building solutions</p>
         </div>
       </div>
       <section class="about" id="aboutDiv">
-        <h2 class="aboutTitle">About</h2>
+        <h2 class="sectionHead">About</h2>
         <div class="picDiv">
           <img
             src="https://user-images.githubusercontent.com/38361826/46032621-0034ba00-c0b1-11e8-9e22-4473702afcee.jpg"
@@ -69,7 +69,21 @@
         </p>
       </section>
       <section class="projects" id="projectsDiv">
-        <h2>Projects</h2>
+        <h2 class="sectionHead">Projects</h2>
+        <ul class="projList">
+          <li class="projRow"><h3>Simon</h3><p class="deets">Details</p><img src="placeholder.jpg"/></li>
+          <li class="projDeets"><p class="appDesc">
+            Remake of the 1978 Milton Bros classic game built with vanilla
+            JavaScript, HTML, and CSS.
+          </p>
+          <img
+            src="https://user-images.githubusercontent.com/38361826/51054169-e6f54200-15a9-11e9-8eab-fa45e0ba5f75.png"
+            alt="screenshot of Simon"
+            class="appSS"
+          />
+          <p class="hide">Hide</p>
+        </li>
+        </ul>
         <div class="proj">
           <a
             href="https://simon-project.netlify.com/"
@@ -139,12 +153,10 @@
         </div>
       </section>
       <section class="experience" id="expDiv">
-        <h2>Experience</h2>
+        <h2 class="sectionHead">Experience</h2>
         <p>
-          My journey into web development began during my time in hospitality.
-          In order to succeed as an event sales manager in the hectic,
-          fast-paced environment at Grand Hyatt New York, efficiency was
-          crucial. While the resources provided often sufficed, when they
+          During my time as an Event Sales Manager, solving problems efficiently was crucial to success.
+          While the resources provided often sufficed, when they
           didn’t, I created my own. Between building invoice templates and
           custom proposals, my passion for creating solutions through technology
           began to grow. This would ultimately lead to enrolling in my first
@@ -156,6 +168,7 @@
           continued to enhance my skills through various courses, creating new
           and refactoring existing projects, and building websites.
         </p>
+        <p>My experience is summarized below:</p>
         <div class="expGridDiv">
           <div class="jCont" id="freeL">
             <h4 class="employer">Freelance</h4>
@@ -264,6 +277,7 @@
           <div class="yr" id="wsuYr"><h2>12</h2></div>
         </div>
       </div>
+      <p>For more detailed descriptions, please see my LinkedIn profile</p>
         <img
           src="https://user-images.githubusercontent.com/38361826/51718401-1331a980-2013-11e9-9bf6-37ae2e9bf3d0.jpg"
         />
@@ -330,10 +344,10 @@
             for housekeeping and front desk.
           </p>
         </div>
-        <p>For more detailed descriptions, please see my LinkedIn profile</p>
+        
       </section>
       <section class="contact" id="contactDiv">
-        <h2>Contact</h2>
+        <h2 class="sectionHead">Contact</h2>
         <div class="contDiv">
           <p>wbwilsoniv@gmail.com</p>
           <!-- <p>646 535 4495</p> -->
