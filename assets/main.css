@@ -235,6 +235,11 @@ section {
   grid-area: projects;
   padding: 0 1rem 1rem 1rem;
   background-color: rgba(5, 5, 5, 0.9);
+  line-height: 145%;
+}
+
+.projIntro {
+  padding: 0 1rem 1rem 1rem;
 }
 
 .projRow {
@@ -242,6 +247,7 @@ section {
   justify-content: space-between;
   padding: 20px 0 20px 0;
   align-items: center;
+  position: relative;
 }
 
 .projDeets {
@@ -250,8 +256,19 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
-  border-top: 1px solid rgba(245, 245, 245, 0.8);
-  border-bottom: 1px solid rgba(245, 245, 245, 0.8);
+  border-top: 1px solid #ce9e62;
+  border-bottom: 1px solid #ce9e62;
+}
+
+.projDeets h7 {
+  font-weight: bold;
+  align-self: flex-start;
+  padding: 10px 0px 0px 70px;
+}
+
+.tech {
+  align-self: flex-start;
+  padding-left: 70px;
 }
 
 .is-visible {
@@ -260,12 +277,20 @@ section {
 .projRow img {
   height: 75px;
   width: auto;
-  align-self: flex-end;
+  position: absolute;
+  top: 11px;
+  left: 300px;
   padding-right: 2rem;
+}
+#rrTN {
+  left: 285px;
+}
+.deets {
+  padding-right: 3rem;
 }
 .hide {
   position: absolute;
-  right: 0;
+  right: 25px;
   top: -55px;
   padding: 4px;
   color: rgba(245, 245, 245, 0.8);
@@ -275,19 +300,21 @@ section {
 .projects h2 {
   color: #ce9e62;
 }
-.xbox {
-  border: 1px solid whitesmoke;
-  border-radius: 50%;
-}
+
 .appSS {
   grid-area: appSS;
   padding: 10px 0px 20px 0px;
-  max-width: 585px;
+  max-width: 400px;
 }
 
 .appDesc {
-  grid-area: appDesc;
-  padding: 10px 0px 5px 10px;
+  align-self: flex-start;
+  padding-left: 70px;
+}
+
+.appSum {
+  align-self: flex-start;
+  padding-left: 70px;
 }
 
 .appLink {
