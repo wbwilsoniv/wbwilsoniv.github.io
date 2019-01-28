@@ -1,25 +1,30 @@
-const details = document.querySelector(".deets");
-const hide = document.querySelector(".hide");
+function show(proj) {
+  let deets = document.querySelector(`#${proj}Deets`);
+  deets.classList.add("is-visible");
+}
+
+function hideDetails(proj) {
+  let deets = document.querySelector(`#${proj}Deets`);
+  deets.classList.remove("is-visible");
+}
 
 function pageLoad() {
-  details.addEventListener("click", e => {
-    e.preventDefault();
-    showDetails();
-    console.log(e.target);
+  let details = document.getElementsByClassName("deets");
+  let deetArr = Array.from(details);
+  deetArr.map(item => {
+    item.addEventListener("click", e => {
+      e.preventDefault();
+      show(item.id);
+    });
   });
-  hide.addEventListener("click", e => {
-    e.preventDefault();
-    hideDetails();
+
+  let hide = document.getElementsByClassName("hide");
+  let hideArr = Array.from(hide);
+  hideArr.map(item => {
+    item.addEventListener("click", e => {
+      e.preventDefault();
+      hideDetails(item.id);
+    });
   });
 }
 pageLoad();
-
-function showDetails() {
-  let projDeet = document.querySelector(".projDeets");
-  projDeet.classList.add("is-visible");
-}
-
-function hideDetails() {
-  let projDeet = document.querySelector(".projDeets");
-  projDeet.classList.remove("is-visible");
-}
