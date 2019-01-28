@@ -50,6 +50,9 @@ section {
 
 .sectionHead {
   color: #ce9e62;
+  font-size: 2.5em;
+  padding-left: 1rem;
+  text-transform: uppercase;
 }
 
 /* Heading Section */
@@ -231,6 +234,7 @@ section {
 .projects {
   grid-area: projects;
   padding: 0 1rem 1rem 1rem;
+  background-color: rgba(5, 5, 5, 0.9);
 }
 
 .projRow {
