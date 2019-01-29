@@ -9,7 +9,7 @@ function hideDetails(proj) {
 }
 
 function showHamburger() {
-  let menu = document.querySelector(".navBar");
+  let menu = document.querySelector("nav");
   menu.classList.toggle("is-visible");
 }
 
@@ -37,7 +37,7 @@ function pageLoad() {
     showHamburger();
   };
 
-  let hamburg = document.getElementsByClassName("hamburg");
+  let hamburg = document.getElementById("ham");
   hamburg.addEventListener("touchstart", handleTouch, false);
 }
 pageLoad();

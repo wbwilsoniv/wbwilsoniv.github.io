@@ -839,7 +839,7 @@ footer p {
   .appSS {
     max-width: 300px;
   }
-  .navBar {
+  nav {
     display: none;
     flex-direction: column;
     justify-content: space-evenly;
@@ -847,9 +847,9 @@ footer p {
     padding-right: 2rem;
     background-color: rgba(30, 30, 30, 0.6);
   }
-  .navBar:hover{
+  /* .navBar:hover{
     display: flex;
-  }
+  } */
 
   .intro {
     grid-area: intro;
