@@ -18,18 +18,19 @@ body {
 .main {
   display: grid;
   grid-template-columns: auto 500px 300px auto;
-  grid-template-rows: auto auto auto auto auto 50px;
+  grid-template-rows: auto auto auto auto auto auto auto;
   grid-template-areas:
     "heading heading heading heading"
     "intro intro intro intro"
     ". about about ."
     ". projects projects ."
     ". experience experience ."
-    ". contact contact .";
+    ". contact contact ."
+    "footer footer footer footer";
   /* height: 100vh;
   width: 100%; */
   position: relative;
-  row-gap: 200px;
+  grid-row-gap: 200px;
   overflow-x: hidden;
   overflow-y: auto;
   background-attachment: fixed;
@@ -105,7 +106,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   box-shadow: 0px 2px rgba(35, 35, 35, 0.05);
   position: relative;
 }
@@ -204,7 +205,7 @@ section {
   /* position: relative; */
   max-width: 180px;
   max-height: auto;
-  padding-left: 2rem;
+  padding: 2rem 0 0 1.55rem;
 }
 
 .firstDesc {
@@ -224,12 +225,8 @@ section {
   height: 100%;
   width: 100%;
   object-fit: scale-down;
-  object-position: 0 20px;
+  object-position: 0 10px;
   clip-path: circle(90px at center);
-}
-
-#headshot {
-  object-fit: contain;
 }
 
 /* Projects Section */
@@ -287,6 +284,9 @@ section {
 }
 #rrTN {
   left: 285px;
+}
+#ptpTN {
+  left: 305px;
 }
 .deets {
   padding-right: 3rem;
@@ -364,14 +364,9 @@ section {
     "jCont7 open desc brackCont mon yr"
     "jCont8 open desc brackCont mon yr";
   margin: 0 auto;
-  /* background: linear-gradient(
-    to bottom,
-    rgba(55, 55, 55, 0.7),
-    35%,
-    rgba(5, 5, 5, 0.9)
-  ); */
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding: 30px 5px 30px 5px;
+  border-top: 1px solid rgba(250, 250, 250, 0.6);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.6);
   /* position: relative; */
 }
 .jCont {
@@ -686,29 +681,30 @@ section {
 }
 
 .linkin {
-  text-decoration: bold;
+  text-decoration: none;
+  font-weight: bold;
   color: rgb(250, 250, 250);
 }
-.experience img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
 
+.botExp {
+  padding-top: 50px;
+}
 /* Contact Styling */
 
 .contact {
   grid-area: contact;
+  padding: 1rem 2rem 2rem 2rem;
+  background-color: rgba(5, 5, 5, 0.9);
+  line-height: 145%;
 }
 
 .contact h2 {
   color: #ce9e62;
-  padding-left: 0.5rem;
 }
 
 .contact a {
   text-decoration: none;
-  color: rgb(35, 35, 35);
+  color: rgb(250, 250, 250);
 }
 
 .contact img {
@@ -718,29 +714,69 @@ section {
 
 .contact a:visited {
   text-decoration: none;
-  color: rgb(35, 35, 35);
+  color: rgb(250, 250, 250);
 }
 
 .contact a:hover {
-  font-weight: 800;
+  transform: scale(1.05, 1.05);
 }
 
 .contDiv {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 40px;
+  padding: 20px 0 20px 0;
 }
 
 /* Link to top of page */
 
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
 .linkTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.linkTop a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.upArrow {
+  transform: rotate(45deg);
+  border-top: 2px solid #ce9e62;
+  border-left: 2px solid #ce9e62;
+  height: 1rem;
+  width: 1rem;
+}
+footer p {
+  font-family: "Megrim", cursive;
+  background-color: rgba(10, 10, 10, 0.8);
+  font-size: 1.5rem;
+  padding: 1px 5px 1px 5px;
+  border: 1px solid black;
+}
+.footLogo {
+  font-style: none;
+  background-color: #ce9e62;
+  border: 1px solid rgba(10, 10, 10, 0.8);
+  font-size: 1.5rem;
+  padding: 1px 2px 1px 2px;
+}
+
+.footLogoDiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 100;
 }
-
 /* Mobile breakpoint */
 
 @media (min-width: 0rem) and (max-width: 36rem) {
