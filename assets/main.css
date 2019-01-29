@@ -831,17 +831,24 @@ footer p {
     background: none;
   }
   .heading a {
+    padding-left: 1rem; 
+  }
+  .is-visible {
+    display: flex;
   }
   .appSS {
     max-width: 300px;
   }
-  #top {
+  .navBar {
     display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
     padding-right: 2rem;
     background-color: rgba(30, 30, 30, 0.6);
+  }
+  .navBar:hover{
+    display: flex;
   }
 
   .intro {

@@ -8,11 +8,16 @@ function hideDetails(proj) {
   deets.classList.remove("is-visible");
 }
 
+function showHamburger() {
+  let menu = document.querySelector(".navBar");
+  menu.classList.toggle("is-visible");
+}
+
 function pageLoad() {
   let details = document.getElementsByClassName("deets");
   let deetArr = Array.from(details);
   deetArr.map(item => {
-    item.addEventListener("click", e => {
+    item.addEventListener("click touchstart", e => {
       e.preventDefault();
       show(item.id);
     });
@@ -21,10 +26,18 @@ function pageLoad() {
   let hide = document.getElementsByClassName("hide");
   let hideArr = Array.from(hide);
   hideArr.map(item => {
-    item.addEventListener("click", e => {
+    item.addEventListener("click touchstart", e => {
       e.preventDefault();
       hideDetails(item.id);
     });
   });
+  let handleTouch = function(e) {
+    e.preventDefault();
+    console.log(hamburg);
+    showHamburger();
+  };
+
+  let hamburg = document.getElementsByClassName("hamburg");
+  hamburg.addEventListener("touchstart", handleTouch, false);
 }
 pageLoad();
