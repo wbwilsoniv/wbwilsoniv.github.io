@@ -705,6 +705,8 @@ section {
 .contact a {
   text-decoration: none;
   color: rgb(250, 250, 250);
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 .contact img {
