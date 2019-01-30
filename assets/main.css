@@ -835,6 +835,7 @@ footer p {
   }
   .is-visible {
     display: flex;
+    position: absolute;
   }
   .appSS {
     max-width: 300px;
