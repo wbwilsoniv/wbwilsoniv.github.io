@@ -307,6 +307,7 @@ section {
   color: #ce9e62;
 }
 
+
 .appSS {
   grid-area: appSS;
   padding: 10px 0px 20px 0px;
@@ -931,7 +932,7 @@ footer p {
   .about {
     grid-area: about;
     line-height: 145%;
-    padding: 1rem 1rem 6rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto auto auto auto;
@@ -966,7 +967,98 @@ footer p {
     clip-path: circle(3.82em at center);
   }
   
-
+  .projects {
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  
+  .projInfo {
+    padding-bottom: 10px;
+  }
+  
+  .projList {
+    border-top: 1px solid rgba(250, 250, 250, 0.6);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .projRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+    align-items: center;
+    position: relative;
+    margin: 0;
+  }
+  
+  .projDeets {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid #ce9e62;
+    border-bottom: 1px solid #ce9e62;
+  }
+  
+  .projDeets h7 {
+    font-weight: bold;
+    align-self: flex-start;
+    padding: 10px 0px 0px 10px;
+  }
+  
+  .tech {
+    align-self: flex-start;
+    padding-left: 10px;
+  }
+  
+  .is-visible {
+    display: flex;
+  }
+  .projRow img {
+    height: 75px;
+    width: auto;
+    position: absolute;
+    top: 11px;
+    left: 185px;
+    padding-right: 2rem;
+  }
+  #rrTN {
+    left: 175px;
+  }
+  #ptpTN {
+    left: 195px;
+  }
+  .deets {
+    padding-right: 1rem;
+  }
+  .hide {
+    position: absolute;
+    right: 25px;
+    top: -55px;
+    padding: 1px 4px 1px 4px;
+    color: rgba(245, 245, 245, 0.8);
+    border: 1px solid rgba(245, 245, 245, 0.8);
+    border-radius: 50%;
+  }
+  .appLink {
+    padding-right: 2rem;
+  }
+  
+  .appSS {
+    grid-area: appSS;
+    padding: 10px 0px 20px 0px;
+    max-width: 250px;
+  }
+  
+  .appDesc {
+    align-self: flex-start;
+    padding-left: 10px;
+  }
+  
+  .appSum {
+    align-self: flex-start;
+    padding-left: 10px;
+  }
 
   .expGridDiv {
     display: grid;
