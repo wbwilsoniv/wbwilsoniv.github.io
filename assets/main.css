@@ -783,7 +783,7 @@ footer p {
 }
 /* Mobile breakpoint */
 
-@media (min-width: 0rem) and (max-width: 36rem) {
+@media (min-width: 23rem) and (max-width: 36rem) {
   .main {
     display: grid;
     grid-template-columns: 3vw 60% 34% 3vw;
@@ -1156,5 +1156,116 @@ footer p {
   }
   #gaJ {
     font-size: 0.6rem;
+  }
+}
+@media (min-width: 0rem) and (max-width: 23rem) {
+  .main {
+    grid-template-columns: 3vw 60% 34% 3vw;
+    grid-template-rows: auto auto auto auto auto auto 10vh;
+    grid-template-areas:
+      ". . heading heading"
+      ". intro intro ."
+      ". about about ."
+      ". projects projects ."
+      ". experience experience ."
+      ". contact contact ."
+      "footer footer footer footer";
+    grid-row-gap: 100px;
+  }
+  .hamburg {
+    grid-area: hamburg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    border: 1px solid #ce9e62;
+    width: 40px;
+    height: 30px;
+    padding: 2px 2px 0px 2px;
+  }
+  .hamburg span {
+    background-color: #ce9e62;
+    color: #ce9e62;
+    width: 25px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    /* padding-top: 3px; */
+  }
+  .heading {
+    position: relative;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    border-radius: 2px;
+    background: none;
+  }
+  .heading a {
+    padding-left: 1rem;
+  }
+  .is-visible {
+    display: flex;
+    position: absolute;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-right: 4em;
+    background-color: rgba(30, 30, 30, 0.6);
+  }
+  .logoCont h1 {
+    font-size: 7em;
+  }
+  .logoCont h2 {
+    font-size: 2.3rem;
+  }
+  .logoDiv {
+    padding-top: 10px;
+    z-index: 2;
+  }
+  .introSub {
+    padding: 20px 0 20px 0;
+  }
+  .about {
+    padding: 1em 1em 3em 1em;
+    grid-template-rows: 3em auto auto auto auto auto;
+    grid-template-areas:
+      "h2 . "
+      "firstDesc picDiv"
+      "secondDesc secondDesc"
+      "thirdDesc thirdDesc"
+      "fourDesc  fourDesc"
+      "fiveDesc fiveDesc";
+  }
+
+  .about h2 {
+    align-self: center;
+    justify-self: flex-start;
+    padding-bottom: 5px;
+  }
+
+  .picDiv {
+    grid-area: picDiv;
+    max-width: 7em;
+    align-self: center;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+
+  .picDiv img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: 0 0.4em;
+    clip-path: circle(3.2em at center);
+  }
+
+  .appSS {
+    max-width: 300px;
   }
 }
