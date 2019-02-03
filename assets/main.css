@@ -6,7 +6,7 @@ body {
   font-size: 1em;
   margin: 0 auto;
   background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineGreyBG.jpg")
-    no-repeat 50% 50% fixed;
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1173,6 +1173,13 @@ footer p {
 @media (min-width: 0rem) and (max-width: 30rem) {
   body {
     font-size: 0.9rem;
+    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineGreyBG.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
   }
   .main {
     grid-template-columns: 3vw 60% 34% 3vw;
