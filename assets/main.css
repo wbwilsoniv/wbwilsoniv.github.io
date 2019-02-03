@@ -434,15 +434,15 @@ nav {
   flex-direction: column;
   align-items: center;
   position: relative;
-  border-right: 2px solid whitesmoke;
-  border-bottom: 2px solid whitesmoke;
+  border-right: 2px solid rgba(245, 245, 245, 0.8);
+  border-bottom: 2px solid rgba(245, 245, 245, 0.8);
 }
 .yr {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid whitesmoke;
+  border-bottom: 2px solid rgba(245, 245, 245, 0.8);
 }
 .yr h2 {
   font-size: 3rem;
@@ -485,19 +485,19 @@ nav {
 }
 #gaPS h5 {
   top: -3px;
-  border-top: 4px solid rgb(251, 41, 59);
+  border-top: 4px solid rgba(251, 41, 59, 0.8);
 }
 .open.gaPSColor {
-  color: rgb(251, 41, 59);
+  color: rgba(251, 41, 59, 0.8);
   top: 0;
 }
 .yr.gaPS {
   color: rgb(250, 250, 250);
 }
 .brack.gaPS {
-  border-top: 4px solid rgb(251, 41, 59);
-  border-bottom: 4px solid rgb(251, 41, 59);
-  border-left: 4px solid rgb(251, 41, 59);
+  border-top: 4px solid rgba(251, 41, 59, 0.8);
+  border-bottom: 4px solid rgba(251, 41, 59, 0.8);
+  border-left: 4px solid rgba(251, 41, 59, 0.8);
   position: absolute;
   height: 40px;
   top: 17px;
@@ -519,13 +519,13 @@ nav {
 }
 #mm h4 {
   align-self: end;
-  border-bottom: 4px solid rgb(74, 134, 232);
+  border-bottom: 4px solid rgba(74, 134, 232, 0.8);
 }
 #mm h5 {
   align-self: start;
 }
 .open.mmColor {
-  color: rgb(74, 134, 232);
+  color: rgba(74, 134, 232, 0.8);
   top: 0;
 }
 .brack.mm {
@@ -533,9 +533,9 @@ nav {
   height: 90px;
   top: 0;
   margin-top: -15px;
-  border-top-color: rgb(74, 134, 232);
-  border-left-color: rgb(74, 134, 232);
-  border-bottom-color: rgb(74, 134, 232);
+  border-top-color: rgba(74, 134, 232, 0.8);
+  border-left-color: rgba(74, 134, 232, 0.8);
+  border-bottom-color: rgba(74, 134, 232, 0.8);
 }
 .mon.mm {
   justify-content: space-around;
@@ -557,10 +557,10 @@ nav {
 }
 #ghESM h5 {
   align-self: start;
-  border-top: 4px solid rgb(186, 33, 64);
+  border-top: 4px solid rgba(186, 33, 64, 0.8);
 }
 .open.ghColor {
-  color: rgb(186, 33, 64);
+  color: rgba(186, 33, 64, 0.8);
   top: 0;
 }
 .brack.ghESM {
@@ -568,9 +568,9 @@ nav {
   height: 114px;
   top: 0;
   margin-top: -10px;
-  border-top-color: rgb(186, 33, 64);
-  border-left-color: rgb(186, 33, 64);
-  border-bottom-color: rgb(186, 33, 64);
+  border-top-color: rgba(186, 33, 64, 0.8);
+  border-left-color: rgba(186, 33, 64, 0.8);
+  border-bottom-color: rgba(186, 33, 64, 0.8);
 }
 .ghESMNov {
   position: absolute;
@@ -585,16 +585,16 @@ nav {
 }
 #ghEC h5 {
   align-self: start;
-  border-top: 4px solid rgb(186, 33, 64);
+  border-top: 4px solid rgba(186, 33, 64, 0.8);
 }
 .brack.ghEC {
   position: absolute;
   height: 84px;
   top: 0;
   margin-top: 29px;
-  border-top-color: rgb(186, 33, 64);
-  border-left-color: rgb(186, 33, 64);
-  border-bottom-color: rgb(186, 33, 64);
+  border-top-color: rgba(186, 33, 64, 0.8);
+  border-left-color: rgba(186, 33, 64, 0.8);
+  border-bottom-color: rgba(186, 33, 64, 0.8);
 }
 
 #ghHK {
@@ -602,7 +602,7 @@ nav {
 }
 #ghHK h4 {
   align-self: end;
-  border-bottom: 4px solid rgb(186, 33, 64);
+  border-bottom: 4px solid rgba(186, 33, 64, 0.8);
 }
 #ghHK h5 {
   align-self: start;
@@ -612,9 +612,9 @@ nav {
   height: 80px;
   top: 0;
   margin-top: 37px;
-  border-top-color: rgb(186, 33, 64);
-  border-left-color: rgb(186, 33, 64);
-  border-bottom-color: rgb(186, 33, 64);
+  border-top-color: rgba(186, 33, 64, 0.8);
+  border-left-color: rgba(186, 33, 64, 0.8);
+  border-bottom-color: rgba(186, 33, 64, 0.8);
 }
 .hkAug {
   position: absolute;
@@ -633,30 +633,30 @@ nav {
 }
 #belle h5 {
   align-self: start;
-  border-top: 4px solid rgb(100, 95, 150);
+  border-top: 4px solid rgba(100, 95, 150, 0.8);
 }
 .bellJan {
   position: absolute;
   bottom: -18px;
 }
 .open.belleColor {
-  color: rgb(100, 95, 150);
+  color: rgba(100, 95, 150, 0.8);
 }
 .brack.belle {
   position: absolute;
   height: 45px;
   top: 0;
   margin-top: 37px;
-  border-top-color: rgb(100, 95, 150);
-  border-left-color: rgb(100, 95, 150);
-  border-bottom-color: rgb(100, 95, 150);
+  border-top-color: rgba(100, 95, 150, 0.8);
+  border-left-color: rgba(100, 95, 150, 0.8);
+  border-bottom-color: rgba(100, 95, 150, 0.8);
 }
 .open.wsuColor {
-  color: rgb(150, 30, 51);
+  color: rgba(150, 30, 51, 0.8);
 }
 #wsu h4 {
   align-self: end;
-  border-bottom: 4px solid rgb(150, 30, 51);
+  border-bottom: 4px solid rgba(150, 30, 51, 0.8);
 }
 #wsu h5 {
   align-self: start;
@@ -666,8 +666,8 @@ nav {
   position: absolute;
   height: 45px;
   top: 10px;
-  border-top: 4px solid rgb(150, 30, 51);
-  border-left: 4px solid rgb(150, 30, 51);
+  border-top: 4px solid rgba(150, 30, 51, 0.8);
+  border-left: 4px solid rgba(150, 30, 51, 0.8);
   border-bottom: 0px;
 }
 .mon.wsu {
@@ -1314,5 +1314,211 @@ footer p {
     align-self: flex-start;
     padding-left: 10px;
     font-size: 0.8rem;
+  }
+
+  .experience {
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  .expGridDiv {
+    display: grid;
+    grid-template-columns: 34% 8% 31% 7% 11% 9%;
+    grid-template-rows: 65px 90px 90px 80px 90px 90px 90px 65px;
+    grid-template-areas:
+      "jCont1 open desc brackCont mon yr"
+      "jCont2 open desc brackCont mon yr"
+      "jCont3 open desc brackCont mon yr"
+      "jCont4 open desc brackCont mon yr"
+      "jCont5 open desc brackCont mon yr"
+      "jCont6 open desc brackCont mon yr"
+      "jCont7 open desc brackCont mon yr"
+      "jCont8 open desc brackCont mon yr";
+    margin: 0 auto;
+    padding: 30px 0px 30px 0px;
+    border-top: 1px solid rgba(250, 250, 250, 0.6);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.6);
+  }
+  .jCont {
+    justify-items: flex-start;
+  }
+  .employer {
+    font-size: 0.65rem;
+    white-space: nowrap;
+    overflow-x: visible;
+  }
+  .jtitle {
+    font-size: 0.65rem;
+    line-height: 120%;
+    padding-top: 3px;
+  }
+  .desc {
+    font-size: 0.6rem;
+    line-height: 135%;
+  }
+  .open {
+    font-size: 3rem;
+  }
+  .brack {
+    width: 8px;
+    right: 2px;
+    border-top: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+  }
+  .mon {
+    font-size: 0.9rem;
+    padding-right: 0.2rem;
+    border-right: 1px solid rgba(245, 245, 245, 0.8);
+    border-bottom: 1px solid rgba(245, 245, 245, 0.8);
+  }
+  .yr {
+    padding-left: 0.2rem;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.8);
+  }
+  .yr h2 {
+    font-size: 2.4rem;
+    padding-left: 1rem;
+  }
+  #freeL h4 {
+    border: none;
+  }
+  #freeL h5 {
+    border-top: 3px solid #ce9e62;
+  }
+  .brack.freeL {
+    border-bottom: 3px solid #ce9e62;
+    border-left: 3px solid #ce9e62;
+  }
+  .flJan {
+    bottom: -14px;
+  }
+  #gaEmp {
+    font-size: 0.6rem;
+    line-height: 120%;
+    align-self: flex-end;
+    white-space: normal;
+    padding-bottom: 4px;
+  }
+  #gaJ {
+    font-size: 0.6rem;
+    line-height: 120%;
+    padding-top: 4px;
+  }
+  #gaPS h5 {
+    top: -3px;
+    border-top: 3px solid rgba(251, 41, 59, 0.8);
+  }
+  .brack.gaPS {
+    border-top: 3px solid rgba(251, 41, 59, 0.8);
+    border-bottom: 3px solid rgba(251, 41, 59, 0.8);
+    border-left: 3px solid rgba(251, 41, 59, 0.8);
+    height: 47px;
+    top: 11px;
+  }
+  #mm h4 {
+    border-bottom: none;
+  }
+  #mm h5 {
+    border-top: 3px solid rgba(74, 134, 232, 0.8);
+  }
+  .brack.mm {
+    height: 80px;
+    top: 3px;
+  }
+  .mmJan {
+    bottom: -13px;
+  }
+  .mmFeb {
+    top: 5px;
+  }
+  #ghESM h4 {
+    border-bottom: 3px solid rgba(186, 33, 64, 0.8);
+  }
+  #ghESM h5 {
+    top: -3px;
+    border-top: none;
+  }
+  .ghESMNov {
+    margin-bottom: -20px;
+  }
+  .brack.ghESM {
+    height: 92px;
+    top: 0px;
+  }
+  #ghEC h4 {
+    border-bottom: 3px solid rgba(186, 33, 64, 0.8);
+  }
+  #ghEC h5 {
+    top: -3px;
+    border-top: none;
+  }
+  .brack.ghEC {
+    top: -5px;
+    height: 77px;
+  }
+  #ghHK h4 {
+    border-bottom: 3px solid rgba(186, 33, 64, 0.8);
+  }
+  .desc.ghHK {
+    align-self: flex-end;
+    padding-left: 0.3rem;
+  }
+  .brack.ghHK {
+    height: 70px;
+    top: -3px;
+  }
+  .hkJul {
+    bottom: 28px;
+  }
+  #belle h4 {
+    bottom: -6px;
+  }
+  #belle h5 {
+    top: 5px;
+    border-top: 3px solid rgba(100, 95, 150, 0.8);
+  }
+  .open.belleColor {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+  .desc.belle {
+    align-self: flex-end;
+    padding-left: 0.3rem;
+  }
+  .brack.belle {
+    height: 48px;
+    top: -9px;
+    width: 8px;
+    right: 2px;
+  }
+  .bellMay {
+    padding: 0 0.2rem 0 0.2rem;
+  }
+  .bellJan {
+    bottom: -15px;
+  }
+  #wsu h4 {
+    border-bottom: 3px solid rgba(150, 30, 51, 0.8);
+  }
+  .open.wsuColor {
+    position: absolute;
+    bottom: -17px;
+    left: 4px;
+  }
+  .brack.wsu {
+    border-top: 3px solid rgba(150, 30, 51, 0.8);
+    border-left: 3px solid rgba(150, 30, 51, 0.8);
+    top: 15px;
+  }
+  .contact {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .contact a {
+    font-size: 1rem;
+  }
+
+  .contact img {
+    width: 1.5em;
+    height: 1.5em;
   }
 }
