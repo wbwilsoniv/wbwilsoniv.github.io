@@ -1159,6 +1159,9 @@ footer p {
   }
 }
 @media (min-width: 0rem) and (max-width: 23rem) {
+  body {
+    font-size: 0.9rem;
+  }
   .main {
     grid-template-columns: 3vw 60% 34% 3vw;
     grid-template-rows: auto auto auto auto auto auto 10vh;
@@ -1209,7 +1212,6 @@ footer p {
   }
   .is-visible {
     display: flex;
-    position: absolute;
   }
   nav {
     display: none;
@@ -1264,8 +1266,53 @@ footer p {
     object-position: 0 0.4em;
     clip-path: circle(3.2em at center);
   }
-
+  .projects {
+    padding: 1rem 1rem 3rem 1rem;
+  }
+  .projList {
+    border-top: 1px solid rgba(250, 250, 250, 0.6);
+    padding: 0;
+    margin: 0;
+  }
+  .projRow {
+    font-size: 0.9rem;
+  }
+  .projRow img {
+    height: 60px;
+    width: auto;
+    position: absolute;
+    top: 11px;
+    left: 165px;
+    padding-right: 2rem;
+  }
+  #spTN {
+    left: 155px;
+  }
+  #ptpTN {
+    left: 175px;
+  }
+  .deets {
+    padding-right: 0rem;
+  }
   .appSS {
-    max-width: 300px;
+    grid-area: appSS;
+    padding: 10px 0px 20px 0px;
+    max-width: 200px;
+  }
+
+  .appDesc {
+    align-self: flex-start;
+    padding-left: 10px;
+  }
+
+  .appSum {
+    align-self: flex-start;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
+  .tech {
+    align-self: flex-start;
+    padding-left: 10px;
+    font-size: 0.8rem;
   }
 }
