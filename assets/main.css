@@ -783,7 +783,7 @@ footer p {
 }
 /* Mobile breakpoint */
 
-@media (min-width: 23rem) and (max-width: 36rem) {
+@media (min-width: 30rem) and (max-width: 65rem) {
   .main {
     display: grid;
     grid-template-columns: 3vw 60% 34% 3vw;
@@ -1158,7 +1158,7 @@ footer p {
     font-size: 0.6rem;
   }
 }
-@media (min-width: 0rem) and (max-width: 23rem) {
+@media (min-width: 0rem) and (max-width: 30rem) {
   body {
     font-size: 0.9rem;
   }
