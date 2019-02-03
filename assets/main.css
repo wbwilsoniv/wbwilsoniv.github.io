@@ -786,9 +786,9 @@ footer p {
 }
 /* Mobile breakpoint */
 
-@media (min-width: 30rem) and (max-width: 65rem) {
+@media (min-width: 30rem) and (max-width: 50rem) {
   body {
-    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineGreyBG.jpg")
+    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
       no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1173,7 +1173,7 @@ footer p {
 @media (min-width: 0rem) and (max-width: 30rem) {
   body {
     font-size: 0.9rem;
-    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineGreyBG.jpg")
+    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
       no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
