@@ -798,7 +798,7 @@ footer p {
   body::before {
     content: "";
     background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
-      no-repeat center center fixed;
+      no-repeat;
     position: fixed;
     top: 0;
     left: 0;
@@ -1194,7 +1194,7 @@ footer p {
   body::before {
     content: "";
     background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
-      no-repeat center center fixed;
+      no-repeat;
     position: fixed;
     top: 0;
     left: 0;
