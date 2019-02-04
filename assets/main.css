@@ -130,7 +130,7 @@ nav {
 .logoCont {
   max-width: 600px;
   align-self: center;
-  padding: 5px;
+  padding: 10px;
   display: grid;
   margin: 0;
   background-color: rgba(10, 10, 10, 0.9);
@@ -1309,6 +1309,9 @@ footer p {
     align-items: flex-end;
     padding-right: 4em;
     background-color: rgba(30, 30, 30, 0.6);
+  }
+  .logoCont {
+    padding: 0px 0px 0px 10px;
   }
   .logoCont h1 {
     font-size: 7em;
