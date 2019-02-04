@@ -278,7 +278,7 @@ nav {
   padding-left: 70px;
 }
 
-.is-visible {
+.is-visible-deets {
   display: flex;
 }
 .projRow img {
@@ -788,13 +788,22 @@ footer p {
 
 @media (min-width: 30rem) and (max-width: 50rem) {
   body {
-    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
-      no-repeat center center fixed;
+    background: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+  }
+  body::before {
+    content: "";
+    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
+      no-repeat center center fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
   .main {
     display: grid;
@@ -808,6 +817,7 @@ footer p {
       ". experience experience ."
       ". contact contact ."
       "footer footer footer footer";
+    grid-row-gap: 100px;
   }
   .hamburg {
     grid-area: hamburg;
@@ -853,11 +863,12 @@ footer p {
   }
   nav {
     display: none;
+    position: absolute;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
-    padding-right: 6em;
-    background-color: rgba(30, 30, 30, 0.6);
+    padding-right: 3em;
+    background-color: rgba(30, 30, 30, 0.2);
   }
 
   .intro {
@@ -1036,8 +1047,8 @@ footer p {
   }
   .hide {
     position: absolute;
-    right: 25px;
-    top: -55px;
+    right: 1px;
+    top: -50px;
     padding: 1px 4px 1px 4px;
     color: rgba(245, 245, 245, 0.8);
     border: 1px solid rgba(245, 245, 245, 0.8);
@@ -1173,14 +1184,24 @@ footer p {
 @media (min-width: 0rem) and (max-width: 30rem) {
   body {
     font-size: 0.9rem;
-    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
-      no-repeat center center fixed;
+    background: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
   }
+  body::before {
+    content: "";
+    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
+      no-repeat center center fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
   .main {
     grid-template-columns: 3vw 60% 34% 3vw;
     grid-template-rows: auto auto auto auto auto auto 10vh;
@@ -1334,7 +1355,10 @@ footer p {
     padding-left: 10px;
     font-size: 0.8rem;
   }
-
+  .hide {
+    right: 1px;
+    top: -50px;
+  }
   .experience {
     padding: 1rem 1rem 3rem 1rem;
   }

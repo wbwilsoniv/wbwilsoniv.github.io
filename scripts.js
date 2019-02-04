@@ -1,11 +1,11 @@
 function show(proj) {
   let deets = document.querySelector(`#${proj}Deets`);
-  deets.classList.add("is-visible");
+  deets.classList.add("is-visible-deets");
 }
 
 function hideDetails(proj) {
   let deets = document.querySelector(`#${proj}Deets`);
-  deets.classList.remove("is-visible");
+  deets.classList.remove("is-visible-deets");
 }
 
 function showHamburger() {
