@@ -813,7 +813,7 @@ footer p {
     background: none;
     position: relative;
     background-attachment: fixed;
-    overflow: hidden;
+    overflow: auto;
   }
   .bgOverlay::before {
     content: "";
@@ -825,8 +825,9 @@ footer p {
       30%,
       rgba(5, 5, 5, 0.9)
     );
+    top: 0;
+    left: 0;
     position: fixed;
-    overflow: hidden;
   }
   .main {
     display: grid;
