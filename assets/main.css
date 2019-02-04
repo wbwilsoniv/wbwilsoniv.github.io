@@ -1452,6 +1452,7 @@ footer p {
   }
   .open {
     font-size: 3rem;
+    font-weight: bold;
   }
   .brack {
     width: 8px;
