@@ -1222,7 +1222,7 @@ footer p {
   }
   body::before {
     content: "";
-    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
+    background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineCropMob.jpg")
       no-repeat;
     position: fixed;
     top: 0;
