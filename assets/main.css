@@ -758,6 +758,8 @@ footer {
   color: whitesmoke;
 }
 .upArrow {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   border-top: 2px solid #ce9e62;
   border-left: 2px solid #ce9e62;
@@ -798,7 +800,7 @@ footer p {
   body::before {
     content: "";
     background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
-      no-repeat;
+      no-repeat center center fixed;
     position: fixed;
     top: 0;
     left: 0;
@@ -978,6 +980,7 @@ footer p {
     width: 100%;
     object-fit: contain;
     /* object-position: 0 2.2em; */
+    -webkit-clip-path: circle(3.82em at center);
     clip-path: circle(3.82em at center);
   }
 
@@ -1194,10 +1197,10 @@ footer p {
   body::before {
     content: "";
     background: url("https://s3.us-east-2.amazonaws.com/willwilson.pro/nyskylineMob.jpg")
-      no-repeat;
-    position: fixed;
+      no-repeat center center fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     height: 100%;
     width: 100%;
   }
@@ -1305,6 +1308,7 @@ footer p {
     object-fit: contain;
     object-position: 0 0.4em;
     clip-path: circle(3.2em at center);
+    -webkit-clip-path: circle(3.82em at center);
   }
   .projects {
     padding: 1rem 1rem 3rem 1rem;
