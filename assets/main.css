@@ -283,6 +283,13 @@ nav {
   padding-left: 70px;
 }
 
+.gitLink {
+  padding-bottom: 1em;
+}
+.gitLink img {
+  width: 3em;
+  height: 3em;
+}
 .is-visible-deets {
   display: flex;
 }
@@ -344,7 +351,7 @@ nav {
 
 .appLink:hover {
   color: rgb(250, 250, 250);
-  transform: scale(1.05, 1.05);
+  /* transform: scale(1.05, 1.05); */
 }
 
 .deets:hover {
